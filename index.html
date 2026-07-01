@@ -1,7 +1,57 @@
-gap: 0.85rem;
-        margin-bottom: 2rem;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VisionHub Account Deletion Request</title>
+    <meta
+      name="description"
+      content="Request deletion of a VisionHub account and associated user data."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #070b14;
+        --panel: #101622;
+        --panel-soft: #151d2b;
+        --text: #f5f7fb;
+        --muted: #a9b4c7;
+        --border: rgba(255, 255, 255, 0.12);
+        --cyan: #19dce8;
+        --red: #ff3b3f;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 14% 0%, rgba(25, 220, 232, 0.18), transparent 30rem),
+          radial-gradient(circle at 90% 4%, rgba(255, 59, 63, 0.16), transparent 28rem),
+          var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Arial,
+          sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(calc(100% - 2rem), 48rem);
+        margin: 0 auto;
+        padding: 4rem 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        margin-bottom: 2rem;
+      }
+            
       .mark {
         display: grid;
         grid-template-columns: repeat(3, 0.8rem);
