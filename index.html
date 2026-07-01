@@ -1,0 +1,139 @@
+gap: 0.85rem;
+        margin-bottom: 2rem;
+      }
+
+      .mark {
+        display: grid;
+        grid-template-columns: repeat(3, 0.8rem);
+        gap: 0.3rem;
+        padding: 0.65rem;
+        border: 1px solid var(--border);
+        border-radius: 1.15rem;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .mark span {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 0.25rem;
+        background: var(--cyan);
+      }
+
+      .mark span:nth-child(3n) {
+        background: var(--red);
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 1.5rem;
+        background: rgba(16, 22, 34, 0.86);
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.32);
+        padding: clamp(1.5rem, 4vw, 2.5rem);
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+      }
+
+      h2 {
+        margin: 2rem 0 0.65rem;
+        font-size: 1.1rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--cyan);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--cyan), #2b6cf0);
+        color: #061019;
+        font-weight: 700;
+        padding: 0.85rem 1.2rem;
+        text-decoration: none;
+      }
+
+      .notice {
+        margin-top: 1.5rem;
+        border: 1px solid rgba(25, 220, 232, 0.22);
+        border-radius: 1rem;
+        background: rgba(25, 220, 232, 0.06);
+        padding: 1rem;
+      }
+
+      .small {
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand" aria-label="VisionHub">
+        <div class="mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+        <strong>VisionHub</strong>
+      </div>
+
+      <section class="card">
+        <h1>Request account deletion</h1>
+        <p>
+          VisionHub users can request deletion of their account and associated
+          application data at any time.
+        </p>
+
+        <h2>Delete your account in the app</h2>
+        <ol>
+          <li>Open VisionHub and sign in.</li>
+          <li>Go to <strong>Settings</strong>.</li>
+          <li>Choose <strong>Delete Account</strong>.</li>
+          <li>Confirm the deletion request.</li>
+        </ol>
+
+        <h2>Request deletion without app access</h2>
+        <p>
+          If you cannot access the app, email the VisionHub support contact
+          using the link below. Include the email address or username connected
+          to the account so the request can be verified.
+        </p>
+        <a
+          class="button"
+          href="mailto:maryamh.r.ali2020@gmail.com@gmail.com?subject=VisionHub%20Account%20Deletion%20Request&body=Hello%20VisionHub%20Support%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20VisionHub%20account%20and%20associated%20data.%0A%0AAccount%20email%20or%20username%3A%20%0AReason%20(optional)%3A%20%0A%0AThank%20you."
+        >
+          Email deletion request
+        </a>
+
+        <div class="notice">
+          <strong>Data deleted:</strong>
+          <p>
+            Account profile information, posts, videos, messages, saved items,
+            uploaded media references, preferences, reports submitted by the
+            user, and other application records associated with the account are
+            deleted or disconnected where technically possible.
+          </p>
+        </div>
+
+        <h2>Retention</h2>
+        <p>
+          Some records may be retained where required for security, fraud
+          prevention, abuse investigation, legal compliance, or backup recovery.
+          Retained data is limited to the purpose that requires retention.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
